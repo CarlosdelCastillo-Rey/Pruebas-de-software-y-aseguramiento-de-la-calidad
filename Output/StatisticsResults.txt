@@ -1,0 +1,79 @@
+
+=== Results for TC1.txt ===
+Descriptive Statistics Results
+-------------------------------
+Count: 400
+Mean: 242.32
+Median: 239.5
+Mode: 170.0, 393.0
+Variance (population): 21099.917599999997
+Standard Deviation (population): 145.25810683056557
+Elapsed time (seconds): 0.00028740009292960167
+
+=== Results for TC2.txt ===
+Descriptive Statistics Results
+-------------------------------
+Count: 1977
+Mean: 250.7840161861406
+Median: 247.0
+Mode: 230.0
+Variance (population): 20785.369132479238
+Standard Deviation (population): 144.17131868884059
+Elapsed time (seconds): 0.0008807999547570944
+
+=== Results for TC3.txt ===
+Descriptive Statistics Results
+-------------------------------
+Count: 12624
+Mean: 249.77621989860583
+Median: 249.0
+Mode: 94.0
+Variance (population): 21117.27747316329
+Standard Deviation (population): 145.31784980917962
+Elapsed time (seconds): 0.005081200040876865
+
+=== Results for TC4.txt ===
+Descriptive Statistics Results
+-------------------------------
+Count: 12624
+Mean: 149.00267347908746
+Median: 147.75
+Mode: 123.75
+Variance (population): 17007.920843018837
+Standard Deviation (population): 130.41441961308894
+Elapsed time (seconds): 0.005461399909108877
+
+=== Results for TC5.txt ===
+Descriptive Statistics Results
+-------------------------------
+Count: 309
+Mean: 240.15210355987054
+Median: 241.0
+Mode: 11.0, 19.0, 23.0, 46.0, 56.0, 64.0, 76.0, 96.0, 166.0, 170.0, 211.0, 215.0, 268.0, 277.0, 278.0, 290.0, 368.0, 375.0, 393.0, 466.0
+Variance (population): 21300.7114923388
+Standard Deviation (population): 145.94763270549748
+Elapsed time (seconds): 0.0002999999560415745
+
+=== Results for TC6.txt ===
+Descriptive Statistics Results
+-------------------------------
+Count: 3000
+Mean: 1.8790659927977473e+20
+Median: 1.88008049965543e+20
+Mode: No mode
+Variance (population): 1.1530904699530647e+40
+Standard Deviation (population): 1.0738205017381e+20
+Elapsed time (seconds): 0.0014835000038146973
+
+=== Results for TC7.txt ===
+Descriptive Statistics Results
+-------------------------------
+Count: 12767
+Mean: 2.474673954997149e+20
+Median: 2.4664097307429e+20
+Mode: No mode
+Variance (population): 2.0910793147136484e+40
+Standard Deviation (population): 1.4460564700984703e+20
+Elapsed time (seconds): 0.005866099847480655
+
+=== Total elapsed time (seconds): 0.029979400103911757 ===
