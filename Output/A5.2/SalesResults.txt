@@ -1,0 +1,107 @@
+================================================================================
+TC: TC1
+================================================================================
+
+RESULT (per product):
+                       product  quantity  price  total_cost
+                green smoothie        22  17.68      388.96
+                    raw legums        21  17.11      359.31
+                          corn        19  13.55      257.45
+               cuban sandwiche        11  18.50      203.50
+hazelnut in black ceramic bowl         7  27.35      191.45
+             fresh blueberries         7  21.01      147.07
+               fresh stawberry         5  28.59      142.95
+           sandwich with salad         5  22.48      112.40
+                homemade bread         6  17.48      104.88
+                         plums         4  19.18       76.72
+      smoothie with chia seeds         3  25.26       75.78
+              rustic breakfast         3  21.32       63.96
+                   pears juice         3  19.49       58.47
+                        cherry         4  14.35       57.40
+                  french fries         3  18.32       54.96
+                      tomatoes         2  26.03       52.06
+             peaches on branch         2  25.62       51.24
+       ground beef meat burger         4  11.73       46.92
+              pesto with basil         2  18.19       36.38
+
+TOTAL COST: 2481.86
+
+No invalid records were found.
+
+TIME ELAPSED (seconds): 0.004996
+================================================================================
+
+================================================================================
+TC: TC2
+================================================================================
+
+RESULT (per product):
+                       product  quantity  price  total_cost
+             fresh blueberries      3825  21.01    80363.25
+                         plums      1231  19.18    23610.58
+                          corn      1664  13.55    22547.20
+                green smoothie       703  17.68    12429.04
+                homemade bread       466  17.48     8145.68
+         sweet fresh stawberry       221  29.45     6508.45
+               fresh stawberry       221  28.59     6318.39
+              rustic breakfast       200  21.32     4264.00
+       ground beef meat burger       146  11.73     1712.58
+      smoothie with chia seeds        61  25.26     1540.86
+                  french fries        57  18.32     1044.24
+           sandwich with salad        23  22.48      517.04
+                    raw legums        13  17.11      222.43
+hazelnut in black ceramic bowl         7  27.35      191.45
+               cuban sandwiche         2  18.50       37.00
+                      tomatoes         1  26.03       26.03
+
+TOTAL COST: 169478.22
+
+INVALID RECORDS:
+--------------------------------------------------------------------------------
+sales_quantity_non_positive (2 rows)
+          product  quantity
+fresh blueberries       -35
+   green smoothie      -123
+
+TIME ELAPSED (seconds): 0.005347
+================================================================================
+
+================================================================================
+TC: TC3
+================================================================================
+
+RESULT (per product):
+                       product  quantity  price  total_cost
+             fresh blueberries      3779  21.01    79396.79
+                         plums      1231  19.18    23610.58
+                          corn      1664  13.55    22547.20
+                green smoothie       703  17.68    12429.04
+                homemade bread       466  17.48     8145.68
+         sweet fresh stawberry       221  29.45     6508.45
+               fresh stawberry       221  28.59     6318.39
+              rustic breakfast       200  21.32     4264.00
+       ground beef meat burger       146  11.73     1712.58
+      smoothie with chia seeds        61  25.26     1540.86
+                  french fries        37  18.32      677.84
+           sandwich with salad        23  22.48      517.04
+                    raw legums        13  17.11      222.43
+hazelnut in black ceramic bowl         7  27.35      191.45
+               cuban sandwiche         2  18.50       37.00
+                      tomatoes         1  26.03       26.03
+
+TOTAL COST: 168145.36
+
+WARNING: Sales products missing from catalogue:
+ product  quantity
+  elotes       100
+frijoles       100
+
+INVALID RECORDS:
+--------------------------------------------------------------------------------
+sales_quantity_non_positive (2 rows)
+          product  quantity
+fresh blueberries       -35
+   green smoothie      -123
+
+TIME ELAPSED (seconds): 0.005300
+================================================================================

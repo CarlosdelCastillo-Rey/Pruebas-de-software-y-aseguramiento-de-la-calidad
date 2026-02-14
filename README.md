@@ -1,137 +1,182 @@
-# Activity 4.2 – Programming Exercise 1
+# Activities 4.2 and 5.2 – Programming Exercises
 
-Course: Software Testing and Quality Assurance  
-Student: Carlos Fernando Del Castillo Rey  
-Student ID: A01796595  
+**Course:** Software Testing and Quality Assurance  
+**Student:** Carlos Fernando Del Castillo Rey  
+**Student ID:** A01796595  
 
 ---
 
 ## Project Description
 
-This repository contains the solution for Activity 4.2 – Programming Exercise 1.
+This repository contains the solutions for **Activity 4.2 – Programming Exercise 1** and **Activity 5.2 – Programming Exercise**, developed in Python.
 
-The objective of this activity is to develop Python programs that process text files from the command line using basic algorithms only, with proper error handling and compliance with PEP8 coding standards.
+The objective of these activities is to implement command-line Python programs that process file-based input using **basic algorithms only**, include **robust error handling**, measure **execution time**, and comply with **PEP8 coding standards**.
 
-Each program reads input data from files, performs the required computation, prints results to the console, and stores the results in output files.
+All programs:
+- Are executed from the command line
+- Read input data from files or folders
+- Print results to the console
+- Save results to output files
+- Continue execution even when invalid data is detected
 
 ---
 
 ## Project Structure
 
-├─ Data/  
-│ ├─ P1/  
-│ │ ├─ TC1.txt  
-│ │ ├─ TC2.txt  
-│ │ └─ ...  
-│ ├─ P2/  
-│ └─ P3/  
-├─ Output/  
-│ ├─ StatisticsResults.txt  
-│ ├─ ConvertionResults.txt  
-│ └─ WordCountResults.txt  
-├─ src/  
-│ ├─ compute_statistics.py  
-│ ├─ convertNumbers.py  
-│ └─ word_count.py  
-├─ SS of/  
-│ └─ PyLint_Score.png  
-└─ README.md  
+```
+├── Archivos de apoyo/
+│   ├── A4.2 Archivos de Apoyo - 06-02-26/
+│   └── A5.2 Archivos de Apoyo/
+├── Data/
+│   ├── A4.2/
+│   └── A5.2/
+│       ├── TC1/
+│       ├── TC2/
+│       └── TC3/
+├── Output/
+│   ├── A4.2/
+│   └── A5.2/
+│       └── SalesResults.txt
+├── src/
+│   ├── A4.2/
+│   │   ├── compute_statistics.py
+│   │   ├── convert_numbers.py
+│   │   └── word_count.py
+│   └── A5.2/
+│       └── compute_sales.py
+├── SS of score/
+│   └── PyLint_Score.png
+├── .gitattributes
+├── .gitignore
+└── README.md
+```
 
 ---
 
-## Program 1: Descriptive Statistics
+## Activity 4.2 – Programming Exercise 1
 
-File: compute_statistics.py
+### Program 1: Descriptive Statistics  
+**File:** `compute_statistics.py`
 
-### Description
-
-This program reads numeric data from a file and computes descriptive statistics using basic algorithms:
-
+#### Description
+Reads numeric data from a text file and computes descriptive statistics using basic algorithms:
 - Mean  
 - Median  
 - Mode  
 - Variance  
 - Standard Deviation  
 
-Invalid data is detected, reported in the console, and skipped without interrupting execution.
+Invalid data is detected, reported to the console, and skipped without interrupting execution.
 
-### Execution
+#### Execution
+```bash
+python src/A4.2/compute_statistics.py Data/A4.2/P1
+```
 
-python src/compute_statistics.py Data/P1
-
-### Output
-
+**Output**
 - Printed to the console  
-- Saved to Output/StatisticsResults.txt  
+- Saved to `Output/A4.2/StatisticsResults.txt`
 
 ---
 
-## Program 2: Number Conversion
+### Program 2: Number Conversion  
+**File:** `convert_numbers.py`
 
-File: convertNumbers.py
-
-### Description
-
-This program reads integer values from a file (or multiple test cases) and converts each number to:
-
+#### Description
+Reads integer values and converts each number to:
 - Binary  
 - Hexadecimal  
 
-All conversions are implemented manually using basic algorithms, without using built-in conversion functions such as bin() or hex().
+All conversions are implemented manually without using built-in functions such as `bin()` or `hex()`.
 
 Invalid data is reported and execution continues.
 
-### Execution
+#### Execution
+```bash
+python src/A4.2/convert_numbers.py Data/A4.2/P2
+```
 
-python src/convertNumbers.py Data/P2
-
-### Output
-
+**Output**
 - Printed to the console  
-- Saved to Output/ConvertionResults.txt  
+- Saved to `Output/A4.2/ConvertionResults.txt`
 
 ---
 
-## Program 3: Word Count
+### Program 3: Word Count  
+**File:** `word_count.py`
 
-File: word_count.py
-
-### Description
-
-This program reads words from text files and identifies:
-
+#### Description
+Processes text files to identify:
 - All distinct words  
-- The frequency of each word  
+- Frequency of each word  
 
-The program supports processing a single file or all TC*.txt files contained in a folder.
+The program supports processing a single file or all `TC*.txt` files contained in a folder.
 
-Empty lines and invalid input are reported as errors, but the program continues execution.
+Empty lines and invalid input are reported as errors, but execution continues.
 
-### Execution
+#### Execution
+```bash
+python src/A4.2/word_count.py Data/A4.2/P3
+```
 
-python src/word_count.py Data/P3
-
-### Output
-
+**Output**
 - Printed to the console  
-- Saved to Output/WordCountResults.txt  
+- Saved to `Output/A4.2/WordCountResults.txt`
+
+---
+
+## Activity 5.2 – Sales Processing Program
+
+### Program: Sales Cost Calculator  
+**File:** `compute_sales.py`
+
+#### Description
+This program processes sales data using:
+- A base product catalogue located in `TC1`
+- Multiple sales records located in `TC1`, `TC2`, `TC3`, etc.
+
+The program:
+- Loads the product catalogue once from `TC1`
+- Processes all test cases automatically
+- Computes total sales cost per product
+- Detects and reports invalid data without stopping execution
+- Measures execution time per test case
+
+#### Execution
+From the project root:
+```bash
+python src/A5.2/compute_sales.py Data/A5.2
+```
+
+**Output**
+- Results printed to the console  
+- Consolidated output saved to:
+  `Output/A5.2/SalesResults.txt`
 
 ---
 
 ## Execution Time
 
-Each program measures the total execution time using time.perf_counter().  
-The elapsed time is displayed in the console and included in the output file.
+All programs measure execution time using `time.perf_counter()`.
+
+The elapsed time:
+- Is displayed in the console  
+- Is included in the corresponding output file  
 
 ---
 
 ## Code Quality
 
-- All programs follow PEP8 guidelines  
-- Static code analysis was performed using PyLint  
-- Evidence of PyLint scores is included in the folder:
+All programs comply with **PEP8**.
 
-SS of/
+Static code analysis performed using:
+- `pylint` (10.00 / 10)
+- `flake8` (no errors)
+
+Evidence of static analysis scores is included in:
+```
+SS of score/
+```
 
 ---
 
@@ -139,7 +184,7 @@ SS of/
 
 - Command-line execution  
 - File-based input  
-- Use of basic algorithms only  
+- Basic algorithms only  
 - Error handling with continued execution  
 - Support for hundreds to thousands of input items  
 - Results written to output files  
